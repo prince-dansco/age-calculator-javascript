@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --purple: hsl(259, 100%, 65%);
+  --light-grey: hsl(0, 0%, 86%);
+  --white: hsl(0, 0%, 100%);
+  --dark-grey: hsl(0, 0%, 41%);
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--light-grey);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: var(--white);
+  border-bottom-right-radius: 80px;
+  padding: 20px;
+  max-width: 450px;
+  width: 100%;
+}
+
+.inputContainer {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.inputsubContainer {
+  display: flex;
+  gap: 2.5em;
+  
+}
+.inputsubContainer div {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid var(--dark-grey);
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--dark-grey);
+  border-radius: 5px;
+}
+label {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: var(--dark-grey);
+}
+
+.outputContainer {
+  margin-top: 15px;
+  text-align: center;
+}
+.outputContainer p {
+  font-size: 3rem;
+  font-weight: 700;
+
+  text-align: start;
+}
+span {
+  color: var(--purple);
+}
+.icon-cart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+.icon-cart hr {
+  width: 80%;
+  height: 1px;
+  background-color: gray;
+  border: none;
+}
+.icon-arrow {
+  background-color: var(--purple);
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.errors {
+  font-size: 9px;
+  color: red;
+}
+@media screen and (max-width: 450px) {
+  .container {
+    padding: 8px;
+  }
+
+  .inputsubContainer {
+    flex-direction: row;
+    gap: 10px;
+
+  }
+
+  .inputsubContainer div {
+    width: 40%;
+  }
+  .inputContainer{
+    padding: 5px;
+  }
+  
+}
